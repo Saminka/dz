@@ -18,13 +18,19 @@
 
 <body>
 
-<form class="js-speaker-form">
-   <label for="name">Имя</label>
-        <input type="text" name="name" id="name"  placeholder="Введите имя"/>
+<form class="form js-speaker-form">
+   <div class="form-field">
+    <label for="name" class="form-label">Имя</label>
+    <input type="text" name="name" id="name" placeholder="Введите имя" class="for-input"/>
+   </div>
+<div class="form-field">
 <label for="tel">Телефон</label>
         <input type="tel" name="tel" id="tel" placeholder="Введите номер телефона"/>
+</div>
+        <div class="form-field">
         <label for="mail">Почта</label>
         <input type="email" name="mail" id="mail" placeholder="ivanov@mail.ru"/>
+</div>
 
 <div role="group">
     <input type="checkbox" name="topic" value="html" id="html">
@@ -48,31 +54,29 @@
     <label for="senior">Senior</label>
 </div>
 
-<label for="date">Дата доклада</label>
-<input type="datetime-local" 
-name="date" 
-id="date"
-min="2020-04-12T10:00"
-max="2020-04-15T17:00"
->
-        <br>
+
+        <div class="">    
+            <label for="date">Дата доклада</label>
+            <input type="datetime-local" name="date" id="date" min="2020-04-12T10:00" max="2020-04-15T17:00">
+        </div>
 
 
-        <br>
+    <div class="">
 <label for="pdf">Загрузите копию доклада в pdf</label>
  <input type="file" name="pdf" id="pdf">
 
-<br>
+</div>
 
+<div class="">
 <label for="comment">Оставьте комментарий</label>
 <textarea name="comment" id="comment"  rows="10"></textarea>
- <br>
+</div>
 
-
+<div class="">
 <input type="checkbox" name="policy" id="policy">
 <label for="policy">Соглашаюсь на все</label> 
 
-<br>
+</div>
         <button type="submit">Оставить заявку</button>
   
    

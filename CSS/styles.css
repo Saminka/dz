@@ -537,3 +537,30 @@ button:focus {
   margin-bottom: 20px;
 }
 /* ===== /Футер ===== */
+
+.form {
+  width: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.form-field {
+  /* outline: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field input {
+  padding: 6px 10px;
+  margin: 0;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+}
